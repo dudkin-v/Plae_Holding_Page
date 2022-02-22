@@ -1,0 +1,48 @@
+.our-costumers {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 800px;
+
+  &-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    padding: 0 8%;
+
+    h2 {
+      font-size: 30px;
+    }
+
+    .costumer-review {
+      display: flex;
+      flex-direction: column;
+      padding: 50px 0;
+      &:before {
+        content: "”";
+        font-size: 72px;
+        color: #dcdcdc;
+      }
+      &:after {
+        content: "“";
+        font-size: 72px;
+        color: #dcdcdc;
+        align-self: end;
+      }
+      p {
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        padding: 30px 0;
+      }
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+}
