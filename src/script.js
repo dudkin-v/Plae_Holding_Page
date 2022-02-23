@@ -37,7 +37,7 @@ const shoes = [
 ];
 let id = 1;
 
-const rangeItem = document.getElementById("range-item");
+const rangeItem = document.getElementById("range");
 const modelName = document.getElementById("model-name");
 const modelNumber = document.getElementById("model-number");
 const prevBtn = document.getElementById("prev-btn");
