@@ -3,14 +3,23 @@
 @import "./styles/css/our-costumers.css";
 @import "./styles/css/range.css";
 @import "./styles/css/benefits.css";
+@import "./styles/css/contacts.css";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  text-decoration: none;
 }
 html, body {
   height: 100%;
+}
+
+a {
+  font-family: "Yantramanav", sans-serif;
+  font-weight: 100;
+  color: black;
+  display: block;
 }
 
 p {

@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 800px;
+  height: 100vh;
   padding: 0 8%;
 }
 .range-description h2 {
