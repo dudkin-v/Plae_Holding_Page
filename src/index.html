@@ -2,11 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <title>Plae_HoldinPage</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&family=Yantramanav:wght@100;300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css" />
+    <title>Plae_HoldinPage</title>
   </head>
   <body>
     <div class="wrapper">
@@ -93,6 +94,19 @@
           <img src="./images/Edie.png" alt="Charlie (age 8)" />
         </div>
       </section>
+
+      <section class="range-block">
+        <h2>The Range</h2>
+        <p>View the styles available now from select stockists</p>
+        <div class="range">
+          <button class="range-btn" type="button" id="prev-btn"><img src="./images/arrow-btn.png" alt="Previous image"></button>
+          <div class="range-item" id="range-item"></div>
+          <button class="range-btn" type="button" id="next-btn"><img src="./images/arrow-btn.png" alt="Next image"></button>
+        </div>
+        <h2 id="model-name"></h2>
+        <p id="model-number"></p>
+      </section>
     </div>
+  <script src="script.js"></script>
   </body>
 </html>

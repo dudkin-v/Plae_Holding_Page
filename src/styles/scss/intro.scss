@@ -4,8 +4,10 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 800px;
-  background-image: url("../../images/blue-stool.png");
+  min-height: 100vh;
+  background-image: url("../../images/Intro_blue_stool.png");
+  background-size: cover;
+  background-position: center;
   box-shadow: 3px 7px 100px 0 rgba(0, 0, 0, 0.35) inset;
 
   &-logo {
@@ -68,8 +70,8 @@
         border-top-right-radius: 25px;
         font-family: 'Nunito', sans-serif;
         font-weight: 400;
+        cursor: pointer;
       }
-
     }
   }
 }
