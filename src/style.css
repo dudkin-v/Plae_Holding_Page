@@ -8,6 +8,20 @@
   box-sizing: border-box;
 }
 
+p {
+  font-family: "Yantramanav", sans-serif;
+  font-weight: 100;
+}
+
+h2 {
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+}
+
+img {
+  max-height: 800px;
+}
+
 .wrapper {
   max-width: 1280px;
   height: 100vh;

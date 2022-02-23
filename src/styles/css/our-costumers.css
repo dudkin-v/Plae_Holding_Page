@@ -6,7 +6,12 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 800px;
+}
+.our-costumers-image {
+  width: 50%;
+}
+.our-costumers-image img {
+  width: 100%;
 }
 .our-costumers-description {
   display: flex;
@@ -21,24 +26,27 @@
 .our-costumers-description .costumer-review {
   display: flex;
   flex-direction: column;
-  padding: 50px 0;
+  padding: 12.5% 0;
 }
 .our-costumers-description .costumer-review:before {
   content: "”";
   font-size: 72px;
   color: #dcdcdc;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
 }
 .our-costumers-description .costumer-review:after {
   content: "“";
   font-size: 72px;
   color: #dcdcdc;
   align-self: end;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
 }
 .our-costumers-description .costumer-review p {
   font-size: 20px;
   line-height: 30px;
   text-align: center;
-  padding: 30px 0;
 }
 .our-costumers-description p {
   font-size: 18px;

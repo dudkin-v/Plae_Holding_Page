@@ -36,6 +36,8 @@
   text-align: center;
   padding: 40px 0;
   text-shadow: 3px 0 7px black;
+  font-family: "Yantramanav", sans-serif;
+  font-weight: 300;
 }
 .intro-description .registration-field {
   display: flex;
@@ -49,6 +51,7 @@
   padding: 12px 25px;
   border-bottom-left-radius: 25px;
   border-top-left-radius: 25px;
+  font-family: "Yantramanav", sans-serif;
 }
 .intro-description .registration-field button {
   border: none;
@@ -58,4 +61,6 @@
   padding: 12px 25px;
   border-bottom-right-radius: 25px;
   border-top-right-radius: 25px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
 }
