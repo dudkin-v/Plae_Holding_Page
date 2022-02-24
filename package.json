@@ -8,13 +8,12 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "browser-sync": "^2.27.7",
+    "prettier": "2.5.1"
+  },
+  "dependencies": {
     "gulp": "^4.0.2",
     "gulp-sass": "^5.1.0",
-    "prettier": "2.5.1",
-    "pump": "^3.0.0",
     "sass": "^1.49.8"
   },
-  "dependencies": {},
   "description": ""
 }
