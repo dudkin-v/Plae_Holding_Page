@@ -1,3 +1,48 @@
+const sections = document.querySelectorAll("section");
+const navLinks = document.querySelectorAll("nav ul li a");
+
+const onScrollWindow = () => {
+  let activeSectionId;
+  
+  sections.forEach((section) => {
+    const sectionTop = section.offsetTop;
+    const sectionHeight = section.offsetHeight;
+
+    if(window.scrollY >= sectionTop - sectionHeight / 2 ) {
+      activeSectionId = section.getAttribute("id");
+    }
+  })
+
+  navLinks.forEach((link) => {
+    link.classList.remove("active");
+    if(link.getAttribute("href").includes(activeSectionId)) {
+      link.classList.add("active");
+    }
+  })
+}
+
+window.onscroll = onScrollWindow;
+
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+
+  link.addEventListener('click', function(e) {
+    e.preventDefault();
+
+    let href = this.getAttribute('href').substring(1);
+
+    const scrollTarget = document.getElementById(href);
+
+    const topOffset = document.querySelector('section').offsetHeight;
+    const elementPosition = scrollTarget.getBoundingClientRect().top;
+    const offsetPosition = elementPosition - topOffset;
+
+    window.scrollBy({
+      top: offsetPosition,
+      behavior: 'smooth'
+    });
+  });
+});
+
 const shoesData = [
   {
     name: "TY",
@@ -39,7 +84,7 @@ const nextBtn = document.getElementById("next-btn");
 const image = document.createElement("img");
 rangeItem.appendChild(image);
 
-function range(index) {
+const range = (index) => {
   const shoes = shoesData[index];
   image.src = shoes.src;
   modelName.innerText = shoes.name;
@@ -47,11 +92,11 @@ function range(index) {
 }
 range(index);
 
-prevBtn.addEventListener("click", function () {
+prevBtn.addEventListener("click",() => {
   index === 0 ? (index = shoesData.length - 1) : index--;
   range(index);
 });
-nextBtn.addEventListener("click", function () {
+nextBtn.addEventListener("click",() => {
   index === (shoesData.length - 1) ? (index = 0) : index++;
   range(index);
 });

@@ -1,28 +1,40 @@
 .intro {
-  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-  min-height: 100vh;
+  justify-content: center;
   background-image: url("../../images/Intro_blue_stool.png");
   background-size: cover;
   background-position: center;
   box-shadow: 3px 7px 100px 0 rgba(0, 0, 0, 0.35) inset;
 
   &-logo {
-    align-self: start;
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 222px;
+    min-width: 135px;
     padding: 40px;
+
+    @media (max-width: 768px) {
+      padding: 20px;
+      max-width: 30%;
+    }
+
+    a>img{
+      width: 100%;
+    }
   }
 
   &-description {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 0 25%;
+
+    @media (max-width: 554px) {
+      padding: 0 10%;
+    }
 
     .description-text-block {
       display: flex;
@@ -32,6 +44,13 @@
       h2 {
         font-size: 60px;
         color: white;
+
+        @media (max-width: 768px) {
+          font-size: 50px;
+        }
+        @media (max-width: 554px) {
+          font-size: 40px;
+        }
       }
 
       p {
@@ -40,8 +59,11 @@
         text-align: center;
         padding: 40px 0;
         text-shadow: 3px 0 7px black;
-        font-family: 'Yantramanav', sans-serif;
         font-weight: 300;
+
+        @media (max-width: 768px) {
+          padding: 20px 0;
+        }
       }
     }
 
