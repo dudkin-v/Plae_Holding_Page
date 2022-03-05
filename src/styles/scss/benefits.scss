@@ -1,0 +1,57 @@
+.benefits {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../images/Why-Plae.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  @media (max-width: 1200px) {
+    background-image: none;
+    background-color: rgb(236,236,236);
+    justify-content: space-around;
+  }
+
+  &-description {
+    h3 {
+      text-align: center;
+    }
+    @media (max-width: 991px) {
+      margin-bottom: 20px;
+      padding: 0 30px;
+    }
+  }
+
+  &-lists {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 6%;
+    @media (max-width: 1200px) {
+      align-items: start;
+    }
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      width: 20%;
+      @media (max-width: 1200px) {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 50%;
+        padding: 0 10px;
+      }
+
+      &-item {
+        background-color: #ffffff;
+        margin-bottom: 25px;
+        padding: 10px;
+        border-radius: 15px;
+        @media (max-width: 1200px) {
+          width: 100%;
+          margin-bottom: 20px;
+        }
+      }
+    }
+  }
+}

@@ -1,12 +1,328 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Plae_HoldinPage</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="wrapper"></div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400&family=Yantramanav:wght@100;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Plae</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <section id="intro" class="intro">
+        <header class="intro-logo">
+          <a href="#intro"><img src="./images/plae-logo.png" alt="Plae shoes" /></a>
+        </header>
+        <div class="intro-description">
+          <div class="description-text-block">
+            <h2>Coming Soon</h2>
+            <p>
+              goplae.co.uk is coming soon but in the meantime check out this
+              page and sign up to our newsletter for more information
+            </p>
+          </div>
+          <div class="registration-field">
+            <label>
+              <input type="text" placeholder="Enter email address" />
+            </label>
+            <button>Sign Up</button>
+          </div>
+        </div>
+      </section>
 
-</body>
+      <section id="about" class="about">
+        <div class="about-description">
+          <h2>About Plae</h2>
+          <p>
+            Previously a Designer for Puma and Adidas, Head Designer Ryan
+            Ringholz has started a new revolution in kids trainers. Using
+            technology usually reserved for elite athletes, Plae creates shoes
+            designed especially for a child’s foot.
+          </p>
+          <p>
+            Because kids feet are always growing, their shoes should accommodate
+            leaving the cartilage and fledgling bone room to grow its own way.
+            The interchangeable tabs adjust to accommodate thinner, wider or
+            thicker feet and nearly all Plae shoes can fit an AFO orthotic
+            brace.
+          </p>
+          <p>
+            With their dynamic traction, little feet can feel the ground beneath
+            them and get a grip on it. The rest is designed to elite athlete
+            standards: super shock absorption, durable toe guards, and wicking,
+            washable anti-microbial inserts.
+          </p>
+          <p>
+            With every shoe, Plae sources responsible, recycled, and non-toxic
+            materials, and makes sure manufacturing and labour is fair and
+            child-free.
+          </p>
+        </div>
+        <div class="about-image">
+          <img src="./images/Max_Black_push_bike.png" alt="Max black push bike">
+        </div>
+      </section>
+
+      <section id="our-costumers" class="our-costumers">
+        <h2>What our customers say</h2>
+        <div class="our-costumers-image">
+         <img src="./images/Emme_Pink_Scooter.png" alt="Charlie (age 8)" />
+        </div>
+        <div class="our-costumers-description">
+          <h2>What our customers say</h2>
+          <blockquote class="costumer-review">
+              I like them because they are very comfy and soft inside. They are
+              really light which means I run faster. I like the cool straps that
+              I can change
+          </blockquote>
+          <p>Charlie (age 8)</p>
+        </div>
+        <div class="our-costumers-description">
+          <blockquote class="costumer-review">
+              I like that I can do PE in them because they're so comfy and then
+              after school in the park, the bottoms are grippy so I can climb
+              really well
+          </blockquote>
+          <p>Edie (age 6)</p>
+        </div>
+        <div class="our-costumers-image">
+          <img src="./images/Edie.png" alt="Charlie (age 8)" />
+        </div>
+      </section>
+
+      <section id="range" class="range">
+        <div class="range-description">
+          <h2>The Range</h2>
+          <p>View the styles available now from select stockists</p>
+        </div>
+        <div class="range-slider">
+          <div class="slider-item" id="slider"></div>
+          <button class="slider-btn" type="button" id="prev-btn"><img src="./images/arrow-btn.png" alt="Previous image"></button>
+          <button class="slider-btn" type="button" id="next-btn"><img src="./images/arrow-btn.png" alt="Next image"></button>
+        </div>
+        <div class="slider-description">
+          <h2 id="shoes-name"></h2>
+          <p id="shoes-number"></p>
+        </div>
+      </section>
+
+      <section id="benefits" class="benefits">
+        <div class="benefits-description">
+          <h2>Why Plae?</h2>
+          <h3>Some of the features that make Plae shoes so good for kids</h3>
+        </div>
+        <div class="benefits-lists">
+          <div class="list">
+            <div class="list-item">
+              <h3>Pull Tab</h3>
+              <p>makes it easy for little hands and fingers to get their shoes on.</p>
+            </div>
+            <div class="list-item">
+              <h3>Shock Absorption</h3>
+              <p>removable ECO-ORTHOLITE® anti-microbial, anti-bacterial insole, made from castor beans, provides superior protection with renewable resources.</p>
+            </div>
+            <div class="list-item">
+              <h3>Custom Fit & Style</h3>
+              <p>interchangeable tabs come in S,M,L,XL sizes to accommodate instep widths and allows kids to make it their own with different color, material and print options. Plae shoes also have the ability to fit AFO orthotic braces.</p>
+            </div>
+            <div class="list-item">
+              <h3>Eco-Friendly</h3>
+              <p>made in a solar powered, fair labour factory using recycled milk jugs (PET), ISO certified leathers, and water-based glues.</p>
+            </div>
+          </div>
+
+          <div class="list">
+            <div class="list-item">
+              <h3>Machine Washable*</h3>
+              <p>for when kids get dirty.</p>
+            </div>
+            <div class="list-item">
+              <h3>Anatomical Form</h3>
+              <p>specially engineered sole follows the natural contour of a child’s foot - which is mostly cartilage.</p>
+            </div>
+            <div class="list-item">
+              <h3>Flexible Sole</h3>
+              <p>promotes natural movement by allowing for a free range of movement.</p>
+            </div>
+            <div class="list-item">
+              <h3>Passive Traction</h3>
+              <p>promotes natural movement by providing grip on loose earth without compromising contact on hard surfaces.</p>
+            </div>
+            <div class="list-item">
+              <h3>Toe Guard</h3>
+              <p>protects both the foot and shoe from toe drag.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contacts" class="contacts">
+        <div class="contacts-description">
+          <h2>Where can you find us?</h2>
+          <p>See below our UK stockist list</p>
+        </div>
+        <div class="contacts-list">
+          <div class="contacts-list-item">
+            <h3>Best Foot Forward</h3>
+            <p>76 Liverpool Road</p>
+            <p>Preston</p>
+            <p>PR1 0QD</p>
+            <a href="tel:020896975">0208 969 75</a>
+            <a href="mailto:bestFootForward.co.uk">bestFootForward.co.uk</a>
+          </div>
+          <div class="contacts-list-item">
+            <h3>Best Foot Forward</h3>
+            <p>76 Liverpool Road</p>
+            <p>Preston</p>
+            <p>PR1 0QD</p>
+            <a href="tel:020896975">0208 969 75</a>
+            <a href="mailto:bestFootForward.co.uk">bestFootForward.co.uk</a>
+          </div>
+          <div class="contacts-list-item">
+            <h3>Best Foot Forward</h3>
+            <p>76 Liverpool Road</p>
+            <p>Preston</p>
+            <p>PR1 0QD</p>
+            <a href="tel:020896975">0208 969 75</a>
+            <a href="mailto:bestFootForward.co.uk">bestFootForward.co.uk</a>
+          </div>
+          <div class="contacts-list-item">
+            <h3>Best Foot Forward</h3>
+            <p>76 Liverpool Road</p>
+            <p>Preston</p>
+            <p>PR1 0QD</p>
+            <a href="tel:020896975">0208 969 75</a>
+            <a href="mailto:bestFootForward.co.uk">bestFootForward.co.uk</a>
+          </div>
+          <div class="contacts-list-item">
+            <h3>Best Foot Forward</h3>
+            <p>76 Liverpool Road</p>
+            <p>Preston</p>
+            <p>PR1 0QD</p>
+            <a href="tel:020896975">0208 969 75</a>
+            <a href="mailto:bestFootForward.co.uk">bestFootForward.co.uk</a>
+          </div>
+          <div class="contacts-list-item">
+            <h3>Best Foot Forward</h3>
+            <p>76 Liverpool Road</p>
+            <p>Preston</p>
+            <p>PR1 0QD</p>
+            <a href="tel:020896975">0208 969 75</a>
+            <a href="mailto:bestFootForward.co.uk">bestFootForward.co.uk</a>
+          </div>
+          <div class="contacts-list-item">
+            <h3>Best Foot Forward</h3>
+            <p>76 Liverpool Road</p>
+            <p>Preston</p>
+            <p>PR1 0QD</p>
+            <a href="tel:020896975">0208 969 75</a>
+            <a href="mailto:bestFootForward.co.uk">bestFootForward.co.uk</a>
+          </div>
+          <div class="contacts-list-item">
+            <h3>Best Foot Forward</h3>
+            <p>76 Liverpool Road</p>
+            <p>Preston</p>
+            <p>PR1 0QD</p>
+            <a href="tel:020896975">0208 969 75</a>
+            <a href="mailto:bestFootForward.co.uk">bestFootForward.co.uk</a>
+          </div>
+          <div class="contacts-list-item">
+            <h3>Best Foot Forward</h3>
+            <p>76 Liverpool Road</p>
+            <p>Preston</p>
+            <p>PR1 0QD</p>
+            <a href="tel:020896975">0208 969 75</a>
+            <a href="mailto:bestFootForward.co.uk">bestFootForward.co.uk</a>
+          </div>
+          <div class="contacts-list-item">
+            <h3>Best Foot Forward</h3>
+            <p>76 Liverpool Road</p>
+            <p>Preston</p>
+            <p>PR1 0QD</p>
+            <a href="tel:020896975">0208 969 75</a>
+            <a href="mailto:bestFootForward.co.uk">bestFootForward.co.uk</a>
+          </div>
+          <div class="contacts-list-item">
+            <h3>Best Foot Forward</h3>
+            <p>76 Liverpool Road</p>
+            <p>Preston</p>
+            <p>PR1 0QD</p>
+            <a href="tel:020896975">0208 969 75</a>
+            <a href="mailto:bestFootForward.co.uk">bestFootForward.co.uk</a>
+          </div>
+          <div class="contacts-list-item">
+            <h3>Best Foot Forward</h3>
+            <p>76 Liverpool Road</p>
+            <p>Preston</p>
+            <p>PR1 0QD</p>
+            <a href="tel:020896975">0208 969 75</a>
+            <a href="mailto:bestFootForward.co.uk">bestFootForward.co.uk</a>
+          </div>
+          <div class="contacts-list-item">
+            <h3>Best Foot Forward</h3>
+            <p>76 Liverpool Road</p>
+            <p>Preston</p>
+            <p>PR1 0QD</p>
+            <a href="tel:020896975">0208 969 75</a>
+            <a href="mailto:bestFootForward.co.uk">bestFootForward.co.uk</a>
+          </div>
+          <div class="contacts-list-item">
+            <h3>Best Foot Forward</h3>
+            <p>76 Liverpool Road</p>
+            <p>Preston</p>
+            <p>PR1 0QD</p>
+            <a href="tel:020896975">0208 969 75</a>
+            <a href="mailto:bestFootForward.co.uk">bestFootForward.co.uk</a>
+          </div>
+          <div class="contacts-list-item">
+            <h3>Best Foot Forward</h3>
+            <p>76 Liverpool Road</p>
+            <p>Preston</p>
+            <p>PR1 0QD</p>
+            <a href="tel:020896975">0208 969 75</a>
+            <a href="mailto:bestFootForward.co.uk">bestFootForward.co.uk</a>
+          </div>
+        </div>
+        <div class="contacts-footer">
+          <div class="contacts-footer-description">
+            <h2>Like to stock Plae?</h2>
+            <p>Call or email us to send an enquiry</p>
+          </div>
+          <div class="contacts-footer-contacts">
+            <a href="mailto:hello@goplae.co.uk">hello@goplae.co.uk</a>
+            <a href="tel:07947301292">07947 301292</a>
+          </div>
+        </div>
+      </section>
+
+     <section id="footer" class="footer">
+       <div class="footer-description">
+         <h2>Be the first to see goplae.co.uk</h2>
+         <p>Sign Up for the latest news</p>
+       </div>
+       <div class="registration-field">
+         <label>
+           <input type="text" placeholder="Enter email address" />
+         </label>
+         <button>Sign Up</button>
+       </div>
+       <footer><p>Plae shoes, 2022</p></footer>
+     </section>
+
+      <nav id="nav" class="nav">
+        <ul>
+          <li><a class="active" href="#intro"></a></li>
+          <li><a href="#about"></a></li>
+          <li><a href="#our-costumers"></a></li>
+          <li><a href="#range"></a></li>
+          <li><a href="#benefits"></a></li>
+          <li><a href="#contacts"></a></li>
+          <li><a href="#footer"></a></li>
+        </ul>
+      </nav>
+    </div>
+  <script src="script.js"></script>
+  </body>
 </html>

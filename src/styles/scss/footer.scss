@@ -1,0 +1,36 @@
+@import "mixins";
+
+.footer {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(236, 236, 236);
+  min-height: 50vh;
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 5px 10px;
+    background-color: grey;
+
+    p {
+      color: white;
+      font-weight: 300;
+    }
+  }
+
+  &-description {
+    h2 {
+      padding-top: 0;
+    }
+    p {
+      text-align: center;
+      padding-bottom: 30px;
+    }
+  }
+
+  .registration-field {
+    @include input-field;
+  }
+}

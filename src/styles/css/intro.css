@@ -1,0 +1,93 @@
+.intro {
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url("../../images/Intro_blue_stool.png");
+  background-size: cover;
+  background-position: center center;
+  box-shadow: 3px 7px 100px 0 rgba(0, 0, 0, 0.35) inset;
+}
+.intro-logo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  max-width: 222px;
+  min-width: 135px;
+  padding: 40px;
+}
+@media (max-width: 767px) {
+  .intro-logo {
+    padding: 20px;
+    max-width: 30%;
+  }
+}
+.intro-description {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20%;
+}
+@media (max-width: 554px) {
+  .intro-description {
+    padding: 0 10%;
+  }
+}
+.intro-description .description-text-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.intro-description .description-text-block h2 {
+  font-size: 60px;
+  color: white;
+  padding: 0;
+}
+@media (max-width: 767px) {
+  .intro-description .description-text-block h2 {
+    font-size: 50px;
+  }
+}
+@media (max-width: 554px) {
+  .intro-description .description-text-block h2 {
+    font-size: 40px;
+  }
+}
+.intro-description .description-text-block p {
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  padding: 40px 0;
+  text-shadow: 3px 0 7px black;
+  font-weight: 300;
+}
+@media (max-width: 767px) {
+  .intro-description .description-text-block p {
+    padding: 20px 0;
+  }
+}
+.intro-description .registration-field {
+  display: flex;
+  justify-content: center;
+}
+.intro-description .registration-field input {
+  border: none;
+  outline: none;
+  background-color: white;
+  font-size: 18px;
+  padding: 12px 25px;
+  border-bottom-left-radius: 25px;
+  border-top-left-radius: 25px;
+  font-family: "Yantramanav", sans-serif;
+}
+.intro-description .registration-field button {
+  border: none;
+  font-size: 18px;
+  color: white;
+  background-color: #20ab50;
+  padding: 12px 25px;
+  border-bottom-right-radius: 25px;
+  border-top-right-radius: 25px;
+  font-family: "Nunito", sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+}
