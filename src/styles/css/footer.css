@@ -11,6 +11,7 @@
   width: 100%;
   padding: 5px 10px;
   background-color: grey;
+  margin-top: 30px;
 }
 .footer footer p {
   color: white;
@@ -37,6 +38,11 @@
   border-top-left-radius: 25px;
   font-family: "Yantramanav", sans-serif;
 }
+@media (max-width: 425px) {
+  .footer .registration-field input {
+    padding: 10px 20px;
+  }
+}
 .footer .registration-field button {
   border: none;
   font-size: 18px;
@@ -48,4 +54,9 @@
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   cursor: pointer;
+}
+@media (max-width: 425px) {
+  .footer .registration-field button {
+    padding: 10px 20px;
+  }
 }

@@ -29,7 +29,7 @@
 }
 @media (max-width: 554px) {
   .intro-description {
-    padding: 0;
+    padding: 0 10%;
   }
 }
 .intro-description .description-text-block {
@@ -79,6 +79,11 @@
   border-top-left-radius: 25px;
   font-family: "Yantramanav", sans-serif;
 }
+@media (max-width: 425px) {
+  .intro-description .registration-field input {
+    padding: 10px 20px;
+  }
+}
 .intro-description .registration-field button {
   border: none;
   font-size: 18px;
@@ -90,4 +95,9 @@
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   cursor: pointer;
+}
+@media (max-width: 425px) {
+  .intro-description .registration-field button {
+    padding: 10px 20px;
+  }
 }
