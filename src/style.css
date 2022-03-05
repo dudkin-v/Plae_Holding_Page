@@ -6,6 +6,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  border-radius: 0;
 }
 
 html, body {
