@@ -91,6 +91,7 @@
 @media (max-width: 767px) {
   .our-costumers-description .costumer-review:after {
     font-size: 32px;
+    padding-top: 0;
   }
 }
 .our-costumers-description p {

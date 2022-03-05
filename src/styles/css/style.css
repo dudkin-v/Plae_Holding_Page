@@ -30,7 +30,7 @@
 }
 @media (max-width: 554px) {
   .intro-description {
-    padding: 0;
+    padding: 0 10%;
   }
 }
 .intro-description .description-text-block {
@@ -80,6 +80,11 @@
   border-top-left-radius: 25px;
   font-family: "Yantramanav", sans-serif;
 }
+@media (max-width: 425px) {
+  .intro-description .registration-field input {
+    padding: 10px 20px;
+  }
+}
 .intro-description .registration-field button {
   border: none;
   font-size: 18px;
@@ -91,6 +96,11 @@
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   cursor: pointer;
+}
+@media (max-width: 425px) {
+  .intro-description .registration-field button {
+    padding: 10px 20px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -223,6 +233,7 @@
 @media (max-width: 767px) {
   .our-costumers-description .costumer-review:after {
     font-size: 32px;
+    padding-top: 0;
   }
 }
 .our-costumers-description p {
@@ -414,6 +425,7 @@
   width: 100%;
   padding: 5px 10px;
   background-color: grey;
+  margin-top: 30px;
 }
 .footer footer p {
   color: white;
@@ -440,6 +452,11 @@
   border-top-left-radius: 25px;
   font-family: "Yantramanav", sans-serif;
 }
+@media (max-width: 425px) {
+  .footer .registration-field input {
+    padding: 10px 20px;
+  }
+}
 .footer .registration-field button {
   border: none;
   font-size: 18px;
@@ -451,6 +468,11 @@
   font-family: "Nunito", sans-serif;
   font-weight: 400;
   cursor: pointer;
+}
+@media (max-width: 425px) {
+  .footer .registration-field button {
+    padding: 10px 20px;
+  }
 }
 
 .nav {

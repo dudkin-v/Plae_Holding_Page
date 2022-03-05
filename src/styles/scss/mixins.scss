@@ -11,6 +11,9 @@
     border-bottom-left-radius: 25px;
     border-top-left-radius: 25px;
     font-family: 'Yantramanav', sans-serif;
+    @media (max-width: 425px) {
+      padding: 10px 20px;
+    }
   }
 
   button {
@@ -24,5 +27,8 @@
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
     cursor: pointer;
+    @media (max-width: 425px) {
+      padding: 10px 20px;
+    }
   }
 }
