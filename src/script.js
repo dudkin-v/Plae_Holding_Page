@@ -1,44 +1,52 @@
 const sections = document.querySelectorAll("section");
 const navLinks = document.querySelectorAll("nav ul li a");
 
+const sectionRange = Array.from(sections).reduce((acc, cur, index) => {
+  const prevSection = acc[index - 1];
+  const id = cur.getAttribute("id");
+
+  if (prevSection) {
+    const currentTop = prevSection.bottom;
+    const currentBottom = currentTop + cur.offsetHeight;
+    return [...acc, { top: currentTop, bottom: currentBottom, id }];
+  } else {
+    return [{ top: cur.offsetTop, bottom: cur.offsetHeight / 2, id }];
+  }
+}, []);
+
+const inRange = (top, bottom, y) => y >= top && y <= bottom;
+
 const onScrollWindow = () => {
-  let activeSectionId;
-  
-  sections.forEach((section) => {
-    const sectionTop = section.offsetTop;
-    const sectionHeight = section.offsetHeight;
+  const windowScroll = window.scrollY;
 
-    if(window.scrollY >= sectionTop - sectionHeight / 2 ) {
-      activeSectionId = section.getAttribute("id");
-    }
-  })
-
+  const activeSection = sectionRange.find((range) =>
+    inRange(range.top, range.bottom, windowScroll)
+  );
   navLinks.forEach((link) => {
     link.classList.remove("active");
-    if(link.getAttribute("href").includes(activeSectionId)) {
+    if (link.getAttribute("href").includes(activeSection?.id)) {
       link.classList.add("active");
     }
-  })
-}
+  });
+};
 
 window.onscroll = onScrollWindow;
 
-document.querySelectorAll('a[href^="#"]').forEach(link => {
-
-  link.addEventListener('click', function(e) {
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+  link.addEventListener("click", function (e) {
     e.preventDefault();
 
-    const href = this.getAttribute('href').substring(1);
+    const href = this.getAttribute("href").substring(1);
 
     const scrollTarget = document.getElementById(href);
 
-    const topOffset = document.querySelector('section').offsetHeight;
+    const topOffset = document.querySelector("section").offsetHeight;
     const elementPosition = scrollTarget.getBoundingClientRect().bottom;
     const offsetPosition = elementPosition - topOffset;
 
     window.scrollBy({
       top: offsetPosition,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
   });
 });
@@ -89,14 +97,14 @@ const range = (index) => {
   image.src = shoes.src;
   modelName.innerText = shoes.name;
   modelNumber.innerText = `${index + 1}/${shoesData.length}`;
-}
+};
 range(index);
 
-prevBtn.addEventListener("click",() => {
+prevBtn.addEventListener("click", () => {
   index === 0 ? (index = shoesData.length - 1) : index--;
   range(index);
 });
-nextBtn.addEventListener("click",() => {
-  index === (shoesData.length - 1) ? (index = 0) : index++;
+nextBtn.addEventListener("click", () => {
+  index === shoesData.length - 1 ? (index = 0) : index++;
   range(index);
 });
