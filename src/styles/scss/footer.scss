@@ -1,47 +1,36 @@
+@import "mixins";
+
 .footer {
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 50vh;
-  width: 100%;
+  background-color: rgb(236, 236, 236);
+  min-height: 50vh;
+
+  footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 5px 10px;
+    background-color: grey;
+
+    p {
+      color: white;
+      font-weight: 300;
+    }
+  }
 
   &-description {
     h2 {
-      padding-bottom: 20px;
+      padding-top: 0;
     }
     p {
-      padding-bottom: 50px;
       text-align: center;
+      padding-bottom: 30px;
     }
   }
 
   .registration-field {
-    display: flex;
-    justify-content: center;
-
-    input {
-      border: none;
-      outline: none;
-      background-color: white;
-      font-size: 18px;
-      padding: 12px 25px;
-      border-bottom-left-radius: 25px;
-      border-top-left-radius: 25px;
-      font-family: "Yantramanav", sans-serif;
-    }
-
-    button {
-      border: none;
-      font-size: 18px;
-      color: white;
-      background-color: #20ab50;
-      padding: 12px 25px;
-      border-bottom-right-radius: 25px;
-      border-top-right-radius: 25px;
-      font-family: "Nunito", sans-serif;
-      font-weight: 400;
-      cursor: pointer;
-    }
+    @include input-field;
   }
 }

@@ -1,17 +1,27 @@
 .footer {
-  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 50vh;
+  background-color: #ececec;
+  min-height: 50vh;
+}
+.footer footer {
+  position: absolute;
+  bottom: 0;
   width: 100%;
+  padding: 5px 10px;
+  background-color: grey;
+}
+.footer footer p {
+  color: white;
+  font-weight: 300;
 }
 .footer-description h2 {
-  padding-bottom: 20px;
+  padding-top: 0;
 }
 .footer-description p {
-  padding-bottom: 50px;
   text-align: center;
+  padding-bottom: 30px;
 }
 .footer .registration-field {
   display: flex;

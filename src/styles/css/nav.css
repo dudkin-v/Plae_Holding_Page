@@ -2,7 +2,12 @@
   position: fixed;
   top: 0;
   right: 0;
-  transform: translate(-200%, 50%);
+  transform: translate(-160%, 50%);
+}
+@media (max-width: 767px) {
+  .nav {
+    transform: translate(-80%, 50%);
+  }
 }
 .nav ul li {
   display: flex;

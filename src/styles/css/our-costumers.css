@@ -1,32 +1,61 @@
 @charset "UTF-8";
 .our-costumers {
-  display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
+}
+.our-costumers h2 {
+  display: none;
+}
+@media (max-width: 767px) {
+  .our-costumers h2 {
+    display: block;
+    width: 100%;
+  }
 }
 .our-costumers-image {
   width: 50%;
+  height: 100vh;
 }
-.our-costumers-image img {
-  width: 100%;
+@media (max-width: 767px) {
+  .our-costumers-image {
+    height: 50vh;
+  }
 }
 .our-costumers-description {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
   width: 50%;
   padding: 0 8%;
+  height: 100vh;
+}
+@media (max-width: 767px) {
+  .our-costumers-description {
+    height: 50vh;
+    justify-content: center;
+  }
 }
 .our-costumers-description h2 {
-  font-size: 30px;
+  padding: 0;
+  display: block;
+}
+@media (max-width: 767px) {
+  .our-costumers-description h2 {
+    display: none;
+  }
 }
 .our-costumers-description .costumer-review {
   display: flex;
   flex-direction: column;
-  padding: 12.5% 0;
+  font-family: "Yantramanav", sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  line-height: 30px;
+}
+@media (max-width: 767px) {
+  .our-costumers-description .costumer-review {
+    font-size: 18px;
+  }
 }
 .our-costumers-description .costumer-review:before {
   content: "”";
@@ -35,6 +64,16 @@
   font-family: "Nunito", sans-serif;
   font-weight: 400;
 }
+@media (max-width: 991px) {
+  .our-costumers-description .costumer-review:before {
+    font-size: 52px;
+  }
+}
+@media (max-width: 767px) {
+  .our-costumers-description .costumer-review:before {
+    font-size: 32px;
+  }
+}
 .our-costumers-description .costumer-review:after {
   content: "“";
   font-size: 72px;
@@ -42,12 +81,23 @@
   align-self: end;
   font-family: "Nunito", sans-serif;
   font-weight: 400;
+  padding-top: 20px;
 }
-.our-costumers-description .costumer-review p {
-  font-size: 20px;
-  line-height: 30px;
-  text-align: center;
+@media (max-width: 991px) {
+  .our-costumers-description .costumer-review:after {
+    font-size: 52px;
+  }
+}
+@media (max-width: 767px) {
+  .our-costumers-description .costumer-review:after {
+    font-size: 32px;
+  }
 }
 .our-costumers-description p {
   font-size: 18px;
+}
+@media (max-width: 767px) {
+  .our-costumers-description p {
+    font-size: 16px;
+  }
 }

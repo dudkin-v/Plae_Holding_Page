@@ -2,7 +2,10 @@
   position: fixed;
   top: 0;
   right: 0;
-  transform: translate(-200%, 50%);
+  transform: translate(-160%, 50%);
+  @media (max-width: 767px) {
+    transform: translate(-80%, 50%);
+  }
 
   ul {
     li{

@@ -28,12 +28,12 @@ document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener('click', function(e) {
     e.preventDefault();
 
-    let href = this.getAttribute('href').substring(1);
+    const href = this.getAttribute('href').substring(1);
 
     const scrollTarget = document.getElementById(href);
 
     const topOffset = document.querySelector('section').offsetHeight;
-    const elementPosition = scrollTarget.getBoundingClientRect().top;
+    const elementPosition = scrollTarget.getBoundingClientRect().bottom;
     const offsetPosition = elementPosition - topOffset;
 
     window.scrollBy({
