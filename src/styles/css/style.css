@@ -415,19 +415,16 @@
 .footer {
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   background-color: #ececec;
-  min-height: 50vh;
+  min-height: 51vh;
 }
 @media (max-height: 425px) {
   .footer {
     min-height: 70vh;
-    justify-content: start;
   }
 }
 .footer footer {
-  position: absolute;
-  bottom: 0;
   width: 100%;
   padding: 5px 10px;
   background-color: grey;
@@ -436,29 +433,11 @@
   color: white;
   font-weight: 300;
 }
-.footer-description h2 {
-  padding-top: 0;
-}
-@media (max-height: 425px) {
-  .footer-description h2 {
-    padding-top: 30px;
-    padding-bottom: 15px;
-  }
-}
-.footer-description p {
-  text-align: center;
-  padding-bottom: 30px;
-}
-@media (max-height: 425px) {
-  .footer-description p {
-    padding-bottom: 15px;
-  }
-}
-.footer .registration-field {
+.footer .footer-content .registration-field {
   display: flex;
   justify-content: center;
 }
-.footer .registration-field input {
+.footer .footer-content .registration-field input {
   border: none;
   outline: none;
   background-color: white;
@@ -469,11 +448,11 @@
   font-family: "Yantramanav", sans-serif;
 }
 @media (max-width: 425px) {
-  .footer .registration-field input {
+  .footer .footer-content .registration-field input {
     padding: 10px 20px;
   }
 }
-.footer .registration-field button {
+.footer .footer-content .registration-field button {
   border: none;
   font-size: 18px;
   color: white;
@@ -486,8 +465,30 @@
   cursor: pointer;
 }
 @media (max-width: 425px) {
-  .footer .registration-field button {
+  .footer .footer-content .registration-field button {
     padding: 10px 20px;
+  }
+}
+.footer .footer-content .content-description h2 {
+  padding-top: 60px;
+}
+@media (max-width: 768px) {
+  .footer .footer-content .content-description h2 {
+    padding-top: 30px;
+  }
+}
+@media (max-height: 425px) {
+  .footer .footer-content .content-description h2 {
+    padding-bottom: 15px;
+  }
+}
+.footer .footer-content .content-description p {
+  text-align: center;
+  padding-bottom: 30px;
+}
+@media (max-height: 425px) {
+  .footer .footer-content .content-description p {
+    padding-bottom: 15px;
   }
 }
 
