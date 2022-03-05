@@ -3,17 +3,14 @@
 .footer {
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   background-color: rgb(236, 236, 236);
-  min-height: 50vh;
+  min-height: 51vh;
   @media (max-height: 425px) {
     min-height: 70vh;
-    justify-content: start;
   }
 
   footer {
-    position: absolute;
-    bottom: 0;
     width: 100%;
     padding: 5px 10px;
     background-color: grey;
@@ -23,25 +20,28 @@
       font-weight: 300;
     }
   }
+  .footer-content {
+    .registration-field {
+      @include input-field;
+    }
 
-  &-description {
-    h2 {
-      padding-top: 0;
-      @media (max-height: 425px) {
-        padding-top: 30px;
-        padding-bottom: 15px;
+    .content-description {
+      h2 {
+        padding-top: 60px;
+        @media (max-width: 768px) {
+          padding-top: 30px;
+        }
+        @media (max-height: 425px) {
+          padding-bottom: 15px;
+        }
+      }
+      p {
+        text-align: center;
+        padding-bottom: 30px;
+        @media (max-height: 425px) {
+          padding-bottom: 15px;
+        }
       }
     }
-    p {
-      text-align: center;
-      padding-bottom: 30px;
-      @media (max-height: 425px) {
-        padding-bottom: 15px;
-      }
-    }
-  }
-
-  .registration-field {
-    @include input-field;
   }
 }
